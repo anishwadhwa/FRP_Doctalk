@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="doctalk.functionalreactive.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_issues_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_issues_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="@string/issues_found"
+            android:gravity="center"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_issues_label"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_empty_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:text="@string/results_not_found"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>

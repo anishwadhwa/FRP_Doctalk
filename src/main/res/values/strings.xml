@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FunctionalReactive</string>
+    <string name="action_search">Search</string>
+    <string name="results_not_found">Error while making the call/ No Results found</string>
+    <string name="github_oauth_token" />
+    <string name="issues_found">Issues found</string>
+</resources>
